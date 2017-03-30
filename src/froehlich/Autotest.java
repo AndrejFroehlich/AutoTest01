@@ -89,7 +89,7 @@ public class Autotest {
 		//a.setFarbe("rot");
 	}
 	
-	@Test
+	@Test (expected =IllegalArgumentException.class)
 	public void test9(){
 		Auto a = new Auto(null ,null , 0);
 		a.setLeistung(0);
